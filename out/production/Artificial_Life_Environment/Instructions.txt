@@ -1,0 +1,31 @@
+Create an artificial life environment.
+You should have at least three types of agents:
+    Herbivore, Carnivore, Plant
+Plants are not moving.
+Herbivore eats plants and carnivore eats herbivore.
+Each herbivore and carnivore reproduce on a neighbor cell if:
+    1. They have enough energy
+    2. They are in a certain age
+    3. They can find a free cell
+Plants can reproduce like carnivore and herbivore or they may reproduce
+ by random in different locations.
+All creators have energy, maximum life and age.
+Movement, reproduction and hunting will reduce the energy.
+Energy consumption should be by a random distance from a mean.
+    Example: (For uniform distribution with min and max)
+    int minHuntEnergy = 1;
+    int maxHuntEnergy = 9;
+    int energy = 100;
+    void hunt()
+    {
+        // Do things
+        energy = energy -
+        (int)(Math.random()*(maxHuntEnergy-minHuntEnergy+1)+minHuntEnergy);
+        // Do things
+    }
+Your program should be object oriented and it should have subclass and
+ super class.
+You may start using the code of artificial agent program.
+Your program should run for certain numbers of iterations that is the input.
+Your program originally prints everything on the screen on different iterations,
+ After sometimes you go to gui on discrete system, then gui on continues system.
