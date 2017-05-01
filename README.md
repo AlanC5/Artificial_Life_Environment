@@ -15,7 +15,7 @@ There are three types of agents:
 
 Each agent has thier own unique specifications.
 
-##Herbivore
+## Herbivore
 - Moves 1 cell
 - Hunts Plants
 - Reproduce 
